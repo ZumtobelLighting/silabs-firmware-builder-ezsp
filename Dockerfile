@@ -52,10 +52,17 @@ RUN \
     && rm simplicity_sdk_2024.6.2.zip
 
 # Gecko SDK 4.4.4
+# RUN \
+#     curl -o gecko_sdk_4.4.4.zip -L https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.4.4/gecko-sdk.zip \
+#     && unzip -q -d gecko_sdk_4.4.4 gecko_sdk_4.4.4.zip \
+#     && rm gecko_sdk_4.4.4.zip
+
+# Gecko SDK 4.0.2
 RUN \
-    curl -o gecko_sdk_4.4.4.zip -L https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.4.4/gecko-sdk.zip \
-    && unzip -q -d gecko_sdk_4.4.4 gecko_sdk_4.4.4.zip \
-    && rm gecko_sdk_4.4.4.zip
+    curl -o gecko_sdk_4.0.2.zip -L https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.0.2/gecko-sdk.zip \
+    && unzip -q -d gecko_sdk_4.0.2 gecko_sdk_4.0.2.zip \
+    && rm gecko_sdk_4.0.2.zip
+
 
 # ZCL Advanced Platform (ZAP) v2024.09.27
 RUN \
