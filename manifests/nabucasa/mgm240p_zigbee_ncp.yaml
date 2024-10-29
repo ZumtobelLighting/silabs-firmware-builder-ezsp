@@ -1,5 +1,5 @@
-name: SkyConnect Zigbee
-device: EFR32MG21A020F512IM32
+name: MGM240P Zigbee
+device: MGM240PB32VNA
 base_project: src/zigbee_ncp
 filename: "{manifest_name}_{ezsp_version}"
 sdk: "gecko_sdk:4.0.2"
