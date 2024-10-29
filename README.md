@@ -2,7 +2,9 @@
 This repository contains tools for building firmwares for the Home Assistant Connect
 ZBT-1/SkyConnect and the Home Assistant Yellow's IEEE 802.15.4 radio. The firmware
 manifests are entirely generic, however, and are intended to be written easily for any
-Silicon Labs EFR32 device.
+Silicon Labs EFR32 device
+
+..
 
 It uses the Silicon Labs Gecko SDK and proprietary Silicon Labs tools such as the
 Silicon Labs Configurator (slc) and the Simplicity Commander standalone utility.
