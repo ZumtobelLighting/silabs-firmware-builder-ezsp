@@ -13,6 +13,7 @@ filter:
   - name: "MCU"
     value: ["Bootloader"]
 
+
 component:
   - id: bootloader_core
   - id: bootloader_crc
@@ -22,17 +23,13 @@ component:
   - id: bootloader_image_parser
   - id: bootloader_token_management
   - id: bootloader_serial_driver
-  - id: bootloader_serial_transport    # Added component for serial transport requirement
-  - id: bootloader_uart_driver         # Added specific driver for serial transport
   - id: bootloader_xmodem_parser
   - id: bootloader_uart_xmodem
   - id: bootloader_debug
-  - id: mbedtls_aes                    # Added mbedtls_aes as recommended
-  - id: mbedtls_slcrypto               # Added mbedtls_slcrypto for cryptographic functionality
 
 configuration:
   - name: SL_VCOM_ENABLE
     value: 1
 
 post_build:
-  profile: bootloader_series_2         # Ensure this profile exists in the SDK or update accordingly
+  profile: bootloader_series_2
