@@ -15,19 +15,15 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  PATHS_MANIFESTS_WHITELIST:
-    # Nabucasa - skyconnect
-    - 'manifests/nabucasa/nabucasa_skyconnect_bootloader.yaml'
-    - 'manifests/nabucasa/nabucasa_skyconnect_zigbee_ncp.yaml'
-    # Sparkfun - MGM240P
-    - 'manifests/sparkfun/sparkfun_mgm240p_bootloader.yaml'
-    - 'manifests/sparkfun/sparkfun_mgm240p_zigbee_ncp.yaml'
-    # Zumtobel - MGM240P
-    - 'manifests/zumtobel/zumtobel_cthings_mgm240p_bootloader.yaml'
-    - 'manifests/zumtobel/zumtobel_cthings_mgm240p_zigbee_ncp.yaml'
-
-
-
+  PATHS_MANIFESTS_WHITELIST: |
+    [
+      "manifests/zumtobel/zumtobel_cthings_mgm240p_bootloader.yaml",
+      "manifests/zumtobel/zumtobel_cthings_mgm240p_zigbee_ncp.yaml",
+      "manifests/nabucasa/nabucasa_skyconnect_bootloader.yaml",
+      "manifests/nabucasa/nabucasa_skyconnect_zigbee_ncp.yaml",
+      "manifests/sparkfun/sparkfun_mgm240p_bootloader.yaml",
+      "manifests/sparkfun/sparkfun_mgm240p_zigbee_ncp.yaml"
+    ]
 
 jobs:
   run-pre-commit:
