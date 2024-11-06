@@ -15,9 +15,7 @@
  *
  ******************************************************************************/
 
-#ifdef SL_COMPONENT_CATALOG_PRESENT
 #include "sl_component_catalog.h"
-#endif
 #include "sl_system_init.h"
 #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
 #include "sl_power_manager.h"
@@ -28,7 +26,7 @@
 #include "sl_system_process_action.h"
 #endif  // SL_CATALOG_KERNEL_PRESENT
 
-#ifdef SL_ZIGBEE_TEST
+#ifdef EMBER_TEST
 #define main nodeMain
 #endif
 

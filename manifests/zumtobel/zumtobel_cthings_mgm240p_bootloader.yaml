@@ -1,8 +1,8 @@
 name: MGM240P Bootloader
-device: MGM240PB32VNN
+device: MGM240PA32VNN
 base_project: src/bootloader
 filename: "{manifest_name}_{gecko_bootloader_version}"
-sdk: "simplicity_sdk:2024.6.2"
+sdk: "gecko_sdk:4.1.6"
 toolchain: "12.2.1.20221205"
 
 gbl:

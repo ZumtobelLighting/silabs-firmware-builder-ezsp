@@ -16,23 +16,13 @@
  ******************************************************************************/
 
 #include PLATFORM_HEADER
-#include "sl_zigbee.h"
-
-//----------------------
-// Implemented Callbacks
+#include "ember.h"
 
 /** @brief
  *
- * Application framework equivalent of ::sl_zigbee_radio_needs_calibrating_handler
+ * Application framework equivalent of ::emberRadioNeedsCalibratingHandler
  */
-void sl_zigbee_af_radio_needs_calibrating_cb(void)
+void emberAfRadioNeedsCalibratingCallback(void)
 {
   sl_mac_calibrate_current_channel();
-}
-
-/** @brief Init
- * Application init function
- */
-void sl_zigbee_af_main_init_cb(void)
-{
 }

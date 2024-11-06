@@ -1,8 +1,8 @@
 name: MGM240P Zigbee
-device: MGM240PB32VNN
+device: MGM240PA32VNN
 base_project: src/zigbee_ncp
 filename: "{manifest_name}_{ezsp_version}_{baudrate}_{fw_variant}"
-sdk: "simplicity_sdk:2024.6.2"
+sdk: "gecko_sdk:4.1.6"
 toolchain: "12.2.1.20221205"
 
 gbl:
@@ -49,3 +49,8 @@ c_defines:
   SL_ZIGBEE_BINDING_TABLE_SIZE: 64
 
   SL_RAIL_UTIL_RSSI_OFFSET: 0
+
+  BOOTLOADER_DISABLE_OLD_BOOTLOADER_MITIGATION: 0
+  BOOTLOADER_DISABLE_NVM3_FAULT_HANDLING: 1
+  BOOTLOADER_MANUAL_OVERRIDE_SECURITY_STATE: 1
+  BOOTLOADER_PPUSATD0_USART0: 1
