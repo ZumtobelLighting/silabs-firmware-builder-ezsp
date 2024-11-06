@@ -313,6 +313,8 @@ def main():
 
     # Ensure we can load the correct SDK and toolchain
     sdks = load_sdks(args.sdks)
+    LOGGER.warning("sdks: %s", sdks)
+
     sdk, sdk_version = next(
         (path, version) for path, version in sdks.items() if version == manifest["sdk"]
     )
